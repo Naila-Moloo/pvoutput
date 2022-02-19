@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="flavanoids <= 2.36\nsquared_error = 0.585\nsamples = 119\nvalue = 0.899", fillcolor="#f3c6a6"] ;
+1 [label="color_intensity <= 3.825\nsquared_error = 0.25\nsamples = 65\nvalue = 1.478", fillcolor="#eca26d"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="squared_error = 0.0\nsamples = 30\nvalue = 1.0", fillcolor="#f2c09c"] ;
+1 -> 2 ;
+3 [label="flavanoids <= 1.385\nsquared_error = 0.106\nsamples = 35\nvalue = 1.88", fillcolor="#e78945"] ;
+1 -> 3 ;
+4 [label="squared_error = 0.0\nsamples = 30\nvalue = 2.0", fillcolor="#e58139"] ;
+3 -> 4 ;
+5 [label="nonflavanoid_phenols <= 0.23\nsquared_error = 0.122\nsamples = 5\nvalue = 1.143", fillcolor="#f0b78e"] ;
+3 -> 5 ;
+6 [label="squared_error = 0.0\nsamples = 1\nvalue = 2.0", fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label="squared_error = 0.0\nsamples = 4\nvalue = 1.0", fillcolor="#f2c09c"] ;
+5 -> 7 ;
+8 [label="alcohol <= 13.02\nsquared_error = 0.201\nsamples = 54\nvalue = 0.279", fillcolor="#fbede3"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="squared_error = 0.0\nsamples = 12\nvalue = 1.0", fillcolor="#f2c09c"] ;
+8 -> 9 ;
+10 [label="magnesium <= 87.5\nsquared_error = 0.044\nsamples = 42\nvalue = 0.046", fillcolor="#fefcfa"] ;
+8 -> 10 ;
+11 [label="squared_error = 0.0\nsamples = 3\nvalue = 1.0", fillcolor="#f2c09c"] ;
+10 -> 11 ;
+12 [label="squared_error = 0.0\nsamples = 39\nvalue = 0.0", fillcolor="#ffffff"] ;
+10 -> 12 ;
+}
